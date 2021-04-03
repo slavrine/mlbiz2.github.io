@@ -16,9 +16,10 @@
         <link rel="stylesheet" href="./assets/vendor/dzsparallaxer/dzsparallaxer.css">
         <link rel="stylesheet" href="./assets/vendor/cubeportfolio/css/cubeportfolio.min.css">
         <link rel="stylesheet" href="./assets/vendor/aos/dist/aos.css">
+        <link rel="stylesheet" href="./assets/vendor/animate.css"> 
+        <link rel="stylesheet" href="./assets/vendor/custombox/custombox.min.css"> 
         <!-- CSS Front Template -->
         <link rel="stylesheet" href="./assets/css/theme.min.css">
-        <link rel="stylesheet" href="./assets/css/custom.css">
     </head>
     <body>
         <!-- ========== HEADER ========== -->
@@ -166,7 +167,7 @@
                                     <!-- End Docs -->
                                     <!-- Button -->
                                     <li class="navbar-nav-last-item">
-                                        <a class="btn btn-sm btn-primary transition-3d-hover" href="javascript:;" data-toggle="modal" data-target="#contactModal">CONTACT</a>
+                                        <a class="btn btn-sm btn-primary transition-3d-hover" href="index.html#contact" target="_blank">CONTACT</a>
                                     </li>
                                     <!-- End Button -->
                                 </ul>
@@ -670,7 +671,7 @@
                                 <p class="text-white-70 mb-0">Yes, we know that it takes <b>YEARS</b> for our competitors. We just work smarter ))</p>
                             </div>
                             <div class="col-md-3 text-md-right">
-                                <a href="javascript:;" data-toggle="modal" data-target="#contactModal" class="btn btn-light transition-3d-hover">Contact Us</a>
+                                <a href="#modal1" data-modal-target="#modal1" data-modal-effect="fadein" class="btn btn-light transition-3d-hover" href="index.html#conntact">Contact Us</a>
                             </div>
                         </div>
                         <!-- SVG Component -->
@@ -1070,204 +1071,229 @@
         </footer>
         <!-- ========== END FOOTER ========== -->
         <!-- ========== SECONDARY CONTENTS ========== -->
-        <!-- Sign Up Modal -->
-        <div class="fade modal" id="contactModal" tabindex="-1" role="dialog" aria-hidden="true" aria-labelledby="contactModaltitle">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <!-- Header -->
-                    <div class="modal-header">
-                        <h4 id="addNewCardModalTitle" class="modal-title">Contact form</h4>
-                        <div class="modal-close">
-                            <button type="button" class="btn btn-icon btn-xs btn-ghost-secondary" data-dismiss="modal" aria-label="Close">
-                                <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill="currentColor" d="M11.5,9.5l5-5c0.2-0.2,0.2-0.6-0.1-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9-0.1l-5,5l-5-5C4.3,2.3,3.9,2.4,3.6,2.6l-1,1 C2.4,3.9,2.3,4.3,2.5,4.5l5,5l-5,5c-0.2,0.2-0.2,0.6,0.1,0.9l1,1c0.3,0.3,0.7,0.3,0.9,0.1l5-5l5,5c0.2,0.2,0.6,0.2,0.9-0.1l1-1 c0.3-0.3,0.3-0.7,0.1-0.9L11.5,9.5z"/>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                    <!-- End Header -->
-                    <!-- Body -->
-                    <div class="modal-body">
-                        <form>
-                            <!-- Button Group -->
-                            <!-- End Button Group -->
-                            <!-- Form Group -->
-                            <!-- End Form Group -->
-                            <!-- Form Group -->
-                            <!-- End Form Group -->
-                            <!-- End Row -->
-                            <!-- Custom Checkbox -->
-                            <!-- End Custom Checkbox -->
-                            <div class="container"> 
-                                <form class="g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30" action="https://formspree.io/xgeaeawa" method="POST"> 
-                                    <!-- Radio Option 1 -->                                     
-                                    <!-- End Radio Option 1 -->                                     
-                                    <!-- Radio Option 2 -->                                     
-                                    <!-- End Radio Option 2 -->                                     
-                                    <!-- Radio Option 3 -->                                     
-                                    <!-- End Radio Option 3 -->                                     
-                                    <!-- Radio Option 4 -->                                     
-                                    <!-- End Radio Option 4 -->                                     
-                                    <hr class="g-brd-gray-light-v4 g-mx-minus-30"> 
-                                    <!-- Columned Radios -->                                                                                                               
-                                    <!-- End Columned Radios -->                                                                          
-                                    <h3 class="g-font-weight-700 g-mb-20 color-black">Timeframe</h3> 
-                                    <div class="btn-group justified-content"> 
-                                        <label class="u-check g-pl-0"> 
-                                            <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" checked="" name="1 month"> 
-                                            <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-primary--checked rounded-0">1 month</span> 
-                                        </label>                                         
-                                        <label class="u-check g-pl-0"> 
-                                            <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" name="2 months"> 
-                                            <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-primary--checked g-brd-left-none--md rounded-0">2 months</span> 
-                                        </label>                                         
-                                        <label class="u-check g-pl-0"> 
-                                            <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" name="3 months"> 
-                                            <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-primary--checked g-brd-left-none--md rounded-0">3 months</span> 
-                                        </label>                                         
-                                        <label class="u-check g-pl-0"> 
-                                            <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" name="6 months"> 
-                                            <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-primary--checked g-brd-left-none--md rounded-0">6 months</span> 
-                                        </label>                                         
-                                        <label class="u-check g-pl-0"> 
-                                            <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" name='12 months'> 
-                                            <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-primary--checked g-brd-left-none--md rounded-0">12 months</span> 
-                                        </label>                                         
-                                    </div>                                     
-                                    <hr class="g-brd-gray-light-v4 g-mx-minus-30"> 
-                                    <form class="g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30"> 
-                                        <!-- Text Input -->                                         
-                                        <!-- End Text Input -->                                         
-                                        <!-- Input with Autocomplete -->                                         
-                                        <h3 class="g-font-weight-700 g-mb-20 color-black">Your personal information</h3> 
+
+        <div id="modal1" class="text-left g-max-width-600 g-overflow-y-auto g-pa-20 g-bg-black" style="display: none;"> 
+            <button type="button" class="close" onclick="Custombox.modal.close();"> 
+                <i class="hs-icon hs-icon-close color-white fa-lg"></i> 
+            </button>                             
+            <div class="g-pt-100 g-pb-70 contact_form_dims"> 
+                <!-- Programs Filter -->                                 
+                <!-- End Programs Filter -->                                 
+                <div class="container"> 
+                    <form class="g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30" action="https://formspree.io/xgeaeawa" method="POST"> 
+                        <!-- Radio Option 1 -->                                         
+                        <!-- End Radio Option 1 -->                                         
+                        <!-- Radio Option 2 -->                                         
+                        <!-- End Radio Option 2 -->                                         
+                        <!-- Radio Option 3 -->                                         
+                        <!-- End Radio Option 3 -->                                         
+                        <!-- Radio Option 4 -->                                         
+                        <h3 class="g-font-weight-700 g-mb-20 color-white">What is your budget?</h3> 
+                        <div class="btn-group justified-content"> 
+                            <label class="u-check g-pl-0"> 
+                                <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" checked="" name="1K"> 
+                                <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-primary--checked rounded-0">$1000</span> 
+                            </label>                                             
+                            <label class="u-check g-pl-0"> 
+                                <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" name="1-3K"> 
+                                <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-primary--checked g-brd-left-none--md rounded-0">$1-3000</span> 
+                            </label>                                             
+                            <label class="u-check g-pl-0"> 
+                                <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" name="3-5K"> 
+                                <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-primary--checked g-brd-left-none--md rounded-0">$3-5000</span> 
+                            </label>                                             
+                            <label class="u-check g-pl-0"> 
+                                <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" name="5-10K"> 
+                                <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-primary--checked g-brd-left-none--md rounded-0">$5-10000</span> 
+                            </label>                                             
+                            <label class="u-check g-pl-0"> 
+                                <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" name='10K+'> 
+                                <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-primary--checked g-brd-left-none--md rounded-0">$10000+</span> 
+                            </label>                                             
+                        </div>                                         
+                        <!-- End Radio Option 4 -->                                         
+                        <hr class="g-brd-gray-light-v4 g-mx-minus-30"> 
+                        <!-- Columned Radios -->                                         
+                        <h3 class="g-font-weight-700 g-mb-20 color-white">What are you interested in?</h3> 
+                        <div class="btn-group justified-content"> 
+                            <label class="u-check g-pl-0"> 
+                                <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" checked="" name="Data_Consulting"> 
+                                <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-primary--checked rounded-0">Data Consulting</span> 
+                            </label>                                             
+                            <label class="u-check g-pl-0"> 
+                                <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" name="Image_Analysis"> 
+                                <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-primary--checked g-brd-left-none--md rounded-0">Image Analysis</span> 
+                            </label>                                             
+                            <label class="u-check g-pl-0"> 
+                                <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" name="Textual_data"> 
+                                <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-primary--checked g-brd-left-none--md rounded-0">Textual data</span> 
+                            </label>                                             
+                            <label class="u-check g-pl-0"> 
+                                <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" name="Optimization"> 
+                                <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-primary--checked g-brd-left-none--md rounded-0">Optimization</span> 
+                            </label>                                             
+                            <label class="u-check g-pl-0"> 
+                                <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" name='Time_data'> 
+                                <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-primary--checked g-brd-left-none--md rounded-0">Time data</span> 
+                            </label>                                             
+                            <label class="u-check g-pl-0"> 
+                                <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" name='Process_modeling'> 
+                                <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-primary--checked g-brd-left-none--md rounded-0">Process modeling+</span> 
+                            </label>                                             
+                        </div>                                         
+                        <!-- End Columned Radios -->                                         
+                        <hr class="g-brd-gray-light-v4 g-mx-minus-30"> 
+                        <h3 class="g-font-weight-700 g-mb-20 color-white">Timeframe</h3> 
+                        <div class="btn-group justified-content"> 
+                            <label class="u-check g-pl-0"> 
+                                <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" checked="" name="1 month"> 
+                                <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-primary--checked rounded-0">1 month</span> 
+                            </label>                                             
+                            <label class="u-check g-pl-0"> 
+                                <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" name="2 months"> 
+                                <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-primary--checked g-brd-left-none--md rounded-0">2 months</span> 
+                            </label>                                             
+                            <label class="u-check g-pl-0"> 
+                                <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" name="3 months"> 
+                                <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-primary--checked g-brd-left-none--md rounded-0">3 months</span> 
+                            </label>                                             
+                            <label class="u-check g-pl-0"> 
+                                <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" name="6 months"> 
+                                <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-primary--checked g-brd-left-none--md rounded-0">6 months</span> 
+                            </label>                                             
+                            <label class="u-check g-pl-0"> 
+                                <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" name='12 months'> 
+                                <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-primary--checked g-brd-left-none--md rounded-0">12 months</span> 
+                            </label>                                             
+                        </div>                                         
+                        <hr class="g-brd-gray-light-v4 g-mx-minus-30"> 
+                        <form class="g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30"> 
+                            <!-- Text Input -->                                             
+                            <!-- End Text Input -->                                             
+                            <!-- Input with Autocomplete -->                                             
+                            <h3 class="g-font-weight-700 g-mb-20 color-white">Your personal information</h3> 
+                            <div class="form-group g-mb-20"> 
+                                <div class="row"> 
+                                    <div class="col-md-6"> 
+                                        <label class="g-mb-10 color-white" for="autocomplete1">Your name</label>                                                         
+                                        <input id="autocomplete2" class="form-control form-control-md rounded-0" type="text" placeholder="e.g. Alice" data-url="assets/include/ajax/autocomplete-data-1.json" name="Your name"> 
+                                        <small class="form-text text-muted g-font-size-default g-mt-10"></small> 
+                                    </div>                                                     
+                                    <div class="col-md-6"> 
+                                        <label class="g-mb-10 color-white" for="autocomplete1">Your last name</label>                                                         
+                                        <input class="form-control form-control-md rounded-0" id="autocomplete2" type="text" placeholder="e.g. Caroll" data-url="assets/include/ajax/autocomplete-data-1.json" name="Your last name"/> 
+                                        <small class="form-text text-muted g-font-size-default g-mt-10"></small> 
+                                    </div>                                                     
+                                </div>                                                 
+                                <div class="row"> 
+                                    <div class="col-md-6"> 
                                         <div class="form-group g-mb-20"> 
-                                            <div class="row"> 
-                                                <div class="col-md-6"> 
-                                                    <label class="g-mb-10 color-white" for="autocomplete1">Your name</label>                                                     
-                                                    <input id="autocomplete2" class="form-control form-control-md rounded-0" type="text" placeholder="e.g. Alice" data-url="assets/include/ajax/autocomplete-data-1.json" name="Your name"> 
-                                                    <small class="form-text text-muted g-font-size-default g-mt-10"></small> 
-                                                </div>                                                 
-                                                <div class="col-md-6"> 
-                                                    <label class="g-mb-10 color-white" for="autocomplete1">Your last name</label>                                                     
-                                                    <input class="form-control form-control-md rounded-0" id="autocomplete2" type="text" placeholder="e.g. Caroll" data-url="assets/include/ajax/autocomplete-data-1.json" name="Your last name"/> 
-                                                    <small class="form-text text-muted g-font-size-default g-mt-10"></small> 
-                                                </div>                                                 
-                                            </div>                                             
+                                            <label class="g-mb-10 color-white" for="autocomplete1">Your email</label>                                                             
+                                            <input class="form-control form-control-md rounded-0" id="autocomplete2" type="text" placeholder="e.g. alice@gmail.com" data-url="assets/include/ajax/autocomplete-data-1.json" name="Your email"/> 
+                                            <small class="form-text text-muted g-font-size-default g-mt-10"><p class="g-color-white-opacity-0_5">We will never share your email with anyone else</p></small> 
+                                        </div>                                                         
+                                    </div>                                                     
+                                    <div class="col-md-6"> 
+                                        <div class="form-group g-mb-20"> 
+                                            <label class="g-mb-10 color-white">Phone number</label>                                                             
+                                            <div class="input-group g-brd-primary--focus"> 
+                                                <input id="inputGroup1_2" class="form-control form-control-md g-brd-right-none rounded-0" type="text" placeholder="(XXX) XXX-XXXX" data-mask="(999) 999-9999" name="Your phone"> 
+                                            </div>                                                             
+                                        </div>                                                         
+                                    </div>                                                     
+                                </div>                                                 
+                                <div class="container g-pb-30"> 
+                                    <form class="row"> 
+                                        <div class="g-mb-50 col-sm-12"> 
+                                            <label class="g-mb-10 color-white">Leave a date/time for a callback</label>                                                             
+                                            <div class="btn-group justified-content"> 
+                                                <label class="u-check g-pl-0"> 
+                                                    <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" checked="" name="Morning"> 
+                                                    <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-primary--checked rounded-0">Morning</span> 
+                                                </label>                                                                 
+                                                <label class="u-check g-pl-0"> 
+                                                    <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" name="Afternoon"> 
+                                                    <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-primary--checked g-brd-left-none--md rounded-0">Afternoon</span> 
+                                                </label>                                                                 
+                                                <label class="u-check g-pl-0"> 
+                                                    <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" name="Evening"> 
+                                                    <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-primary--checked g-brd-left-none--md rounded-0">Evening</span> 
+                                                </label>                                                                 
+                                            </div>                                                             
+                                            <!-- Select Single Date -->                                                             
+                                            <br/> 
                                             <div class="row"> 
                                                 <div class="col-md-6"> 
                                                     <div class="form-group g-mb-20"> 
-                                                        <label class="g-mb-10 color-white" for="autocomplete1">Your email</label>                                                         
-                                                        <input class="form-control form-control-md rounded-0" id="autocomplete2" type="text" placeholder="e.g. alice@gmail.com" data-url="assets/include/ajax/autocomplete-data-1.json" name="Your email"/> 
-                                                        <small class="form-text text-muted g-font-size-default g-mt-10"><p class="g-color-white-opacity-0_5">We will never share your email with anyone else</p></small> 
-                                                    </div>                                                     
-                                                </div>                                                 
-                                                <div class="col-md-6"> 
-                                                    <div class="form-group g-mb-20"> 
-                                                        <label class="g-mb-10 color-white">Phone number</label>                                                         
+                                                        <label class="g-mb-10 color-white">Date</label>                                                                         
                                                         <div class="input-group g-brd-primary--focus"> 
-                                                            <input id="inputGroup1_2" class="form-control form-control-md g-brd-right-none rounded-0" type="text" placeholder="(XXX) XXX-XXXX" data-mask="(999) 999-9999" name="Your phone"> 
-                                                        </div>                                                         
-                                                    </div>                                                     
-                                                </div>                                                 
-                                            </div>                                             
-                                            <div class="container g-pb-30"> 
-                                                <form class="row"> 
-                                                    <div class="g-mb-50 col-sm-12"> 
-                                                        <label class="g-mb-10 color-black">Leave a date/time for a callback</label>                                                         
-                                                        <div class="btn-group justified-content"> 
-                                                            <label class="u-check g-pl-0"> 
-                                                                <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" checked="" name="Morning"> 
-                                                                <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-primary--checked rounded-0">Morning</span> 
-                                                            </label>                                                             
-                                                            <label class="u-check g-pl-0"> 
-                                                                <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" name="Afternoon"> 
-                                                                <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-primary--checked g-brd-left-none--md rounded-0">Afternoon</span> 
-                                                            </label>                                                             
-                                                            <label class="u-check g-pl-0"> 
-                                                                <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" name="Evening"> 
-                                                                <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-primary--checked g-brd-left-none--md rounded-0">Evening</span> 
-                                                            </label>                                                             
-                                                        </div>                                                         
-                                                        <!-- Select Single Date -->                                                         
-                                                        <br/> 
-                                                        <div class="row"> 
-                                                            <div class="col-md-6"> 
-                                                                <div class="form-group g-mb-20"> 
-                                                                    <label class="g-mb-10 color-white">Date</label>                                                                     
-                                                                    <div class="input-group g-brd-primary--focus"> 
-                                                                        <input id="inputGroup1_1" class="form-control form-control-md g-brd-right-none rounded-0" type="text" placeholder="DAY/MONTH/YEAR" data-mask="99/99/9999" name="Date"> 
-                                                                    </div>                                                                     
-                                                                </div>                                                                 
-                                                            </div>                                                             
-                                                            <div class="col-md-6"> 
-                                                                <div class="form-group g-mb-20"> 
-                                                                    <label class="g-mb-10 color-white">Timezone</label>                                                                     
-                                                                    <div class="input-group g-brd-primary--focus"> 
-                                                                        <input class="form-control form-control-md rounded-0" id="autocomplete2" type="text" placeholder="e.g. EST or Toronto" data-url="assets/include/ajax/autocomplete-data-1.json" name="Timezone"/> 
-                                                                        <div class="input-group-append"> 
-</div>                                                                         
-                                                                    </div>                                                                     
-                                                                </div>                                                                 
-                                                            </div>                                                             
-                                                        </div>                                                         
-                                                        <!-- <div class="col-md-6">
-                                                                <br/>
-                                                                <label class="g-mb-10 color-white" for="autocomplete1">Timezone</label>
-                                                                <input class="form-control form-control-md rounded-0" id="autocomplete2" type="text" placeholder="e.g. EST or Toronto" data-url="assets/include/ajax/autocomplete-data-1.json" name="Timezone"/>
-                                                                <small class="form-text text-muted g-font-size-default g-mt-10"></small> 
-                                                            </div> -->                                                         
-                                                        <!-- Area of Interest -->                                                         
-                                                        <!-- End Area of Interest -->                                                         
-                                                    </div>                                                     
-                                                </form>                                                 
-                                                <div class="form-group g-mb-20"> 
-                                                    <label class="g-mb-10 color-white" for="inputGroup2_2">Your project details</label>                                                     
-                                                    <textarea class="form-control form-control-md rounded-0" id="inputGroup2_2" rows="3" placeholder="Problems that need solving go here..." name="Project details"></textarea> 
-                                                </div>                                                 
-                                                <div class="row"> 
-                                                    <div class="g-mt-30 g-mb-30 col-sm-3"> 
-</div>                                                     
-                                                    <div class="g-mt-30 g-mb-30 col-sm-3"> 
-</div>                                                     
-                                                    <div class="g-mt-30 g-mb-30 col-sm-3"> 
-</div>                                                     
-                                                    <div class="g-mt-30 g-mb-30 col-sm-3"> 
-                                                        <div class="d-flex"> 
+                                                            <input id="inputGroup1_1" class="form-control form-control-md g-brd-right-none rounded-0" type="text" placeholder="DAY/MONTH/YEAR" data-mask="99/99/9999" name="Date"> 
+                                                        </div>                                                                         
+                                                    </div>                                                                     
+                                                </div>                                                                 
+                                                <div class="col-md-6"> 
+                                                    <div class="form-group g-mb-20"> 
+                                                        <label class="g-mb-10 color-white">Timezone</label>                                                                         
+                                                        <div class="input-group g-brd-primary--focus"> 
+                                                            <input class="form-control form-control-md rounded-0" id="autocomplete2" type="text" placeholder="e.g. EST or Toronto" data-url="assets/include/ajax/autocomplete-data-1.json" name="Timezone"/> 
+                                                            <div class="input-group-append"> 
+</div>                                                                             
+                                                        </div>                                                                         
+                                                    </div>                                                                     
+                                                </div>                                                                 
+                                            </div>                                                             
+                                            <!-- <div class="col-md-6">
+                                                <br/>
+                                                <label class="g-mb-10 color-white" for="autocomplete1">Timezone</label>
+                                                <input class="form-control form-control-md rounded-0" id="autocomplete2" type="text" placeholder="e.g. EST or Toronto" data-url="assets/include/ajax/autocomplete-data-1.json" name="Timezone"/>
+                                                <small class="form-text text-muted g-font-size-default g-mt-10"></small> 
+                                            </div> -->                                                             
+                                            <!-- Area of Interest -->                                                             
+                                            <!-- End Area of Interest -->                                                             
+                                        </div>                                                         
+                                    </form>                                                     
+                                    <div class="form-group g-mb-20"> 
+                                        <label class="g-mb-10 color-white" for="inputGroup2_2">Your project details</label>                                                         
+                                        <textarea class="form-control form-control-md rounded-0" id="inputGroup2_2" rows="3" placeholder="Problems that need solving go here..." name="Project details"></textarea> 
+                                    </div>                                                     
+                                    <div class="row"> 
+                                        <div class="g-mt-30 g-mb-30 col-sm-3"> 
 </div>                                                         
-                                                    </div>                                                     
-                                                </div>                                                 
-                                            </div>                                             
-                                            <div class="shortcode-scripts"> 
-                                                <!-- JS Implementing Plugins -->                                                 
-                                                <!-- JS Plugins Init. -->                                                 
-                                            </div>                                             
-                                        </div>                                         
-                                        <!-- End Input with Autocomplete -->                                         
-                                        <!-- Text Input with Right Appended Icon -->                                         
-                                        <!-- End Text Input with Right Appended Icon -->                                         
-                                        <!-- Text Input with Left Appended Icon -->                                         
-                                        <!-- End Text Input with Left Appended Icon -->                                         
-                                        <!-- Text Input with Both Appended Icon -->                                         
-                                        <!-- End Text Input with Both Appended Icon -->                                         
-                                        <!-- Text Input with Right Appended Icon -->                                         
-                                        <!-- End Text Input with Right Appended Icon -->                                         
-                                        <!-- Text Input with Left Appended Icon -->                                         
-                                        <!-- End Text Input with Left Appended Icon -->                                         
-                                        <!-- Text Input with Both Appended Icon -->                                         
-                                        <!-- End Text Input with Both Appended Icon -->                                         
-                                    </form>                                     
-                                </form>                                 
-                            </div>
-                            <div class="d-flex justify-content-end">
-                                <button type="button" class="btn btn-white mr-2" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Send</button>
-                            </div>
-                        </form>
-                    </div>
-                    <!-- End Body -->
-                </div>
-            </div>
-        </div>
+                                        <div class="g-mt-30 g-mb-30 col-sm-3"> 
+</div>                                                         
+                                        <div class="g-mt-30 g-mb-30 col-sm-3"> 
+</div>                                                         
+                                        <div class="g-mt-30 g-mb-30 col-sm-3"> 
+                                            <div class="d-flex"> 
+                                                <button class="btn btn-block u-shadow-v32 g-brd-none g-color-white g-bg-black g-bg-primary--hover g-font-size-16 g-rounded-30 g-py-10 ml-2 g-mt-0 btn_blue_lineargradient" type="submit" value='Send'>SEND</button>                                                                 
+                                            </div>                                                             
+                                        </div>                                                         
+                                    </div>                                                     
+                                </div>                                                 
+                                <div class="shortcode-scripts"> 
+                                    <!-- JS Implementing Plugins -->                                                     
+                                    <!-- JS Plugins Init. -->                                                     
+                                </div>                                                 
+                            </div>                                             
+                            <!-- End Input with Autocomplete -->                                             
+                            <!-- Text Input with Right Appended Icon -->                                             
+                            <!-- End Text Input with Right Appended Icon -->                                             
+                            <!-- Text Input with Left Appended Icon -->                                             
+                            <!-- End Text Input with Left Appended Icon -->                                             
+                            <!-- Text Input with Both Appended Icon -->                                             
+                            <!-- End Text Input with Both Appended Icon -->                                             
+                            <!-- Text Input with Right Appended Icon -->                                             
+                            <!-- End Text Input with Right Appended Icon -->                                             
+                            <!-- Text Input with Left Appended Icon -->                                             
+                            <!-- End Text Input with Left Appended Icon -->                                             
+                            <!-- Text Input with Both Appended Icon -->                                             
+                            <!-- End Text Input with Both Appended Icon -->                                             
+                        </form>                                         
+                    </form>                                     
+                </div>                                 
+            </div>                             
+        </div>  
+        <!-- Sign Up Modal -->
         <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">

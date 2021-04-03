@@ -18,7 +18,6 @@
         <link rel="stylesheet" href="./assets/vendor/aos/dist/aos.css">
         <!-- CSS Front Template -->
         <link rel="stylesheet" href="./assets/css/theme.min.css">
-        <link rel="stylesheet" href="./assets/css/custom.css">
     </head>
     <body>
         <!-- ========== HEADER ========== -->
@@ -1071,12 +1070,12 @@
         <!-- ========== END FOOTER ========== -->
         <!-- ========== SECONDARY CONTENTS ========== -->
         <!-- Sign Up Modal -->
-        <div class="fade modal" id="contactModal" tabindex="-1" role="dialog" aria-hidden="true" aria-labelledby="contactModaltitle">
+        <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-hidden="true" aria-labelledby="contactModaltitle">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <!-- Header -->
                     <div class="modal-header">
-                        <h4 id="addNewCardModalTitle" class="modal-title">Contact form</h4>
+                        <h4 id="addNewCardModalTitle" class="modal-title">Add card</h4>
                         <div class="modal-close">
                             <button type="button" class="btn btn-icon btn-xs btn-ghost-secondary" data-dismiss="modal" aria-label="Close">
                                 <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
@@ -1090,11 +1089,54 @@
                     <div class="modal-body">
                         <form>
                             <!-- Button Group -->
+                            <div class="btn-group btn-group-toggle btn-group-segment d-flex form-group" data-toggle="buttons">
+                                <label class="btn btn-sm flex-fill focus active">
+                                    <input type="radio" name="options" id="option1" checked> Credit or Debit card
+                                </label>
+                                <label class="btn btn-sm flex-fill disabled">
+                                    <input type="radio" name="options" id="option2"> PayPal 
+                                    <span class="badge badge-soft-primary">Coming soon</span>
+                                </label>
+                            </div>
                             <!-- End Button Group -->
                             <!-- Form Group -->
+                            <div class="form-group">
+                                <label for="cardNameLabel" class="input-label">Name on card</label>
+                                <input type="text" class="form-control" id="cardNameLabel" placeholder="Payoneer" aria-label="Payoneer">
+                            </div>
                             <!-- End Form Group -->
                             <!-- Form Group -->
+                            <div class="form-group">
+                                <label for="cardNumberLabel" class="input-label">Card number</label>
+                                <input type="text" class="js-masked-input form-control" name="cardNumber" id="cardNumberLabel" placeholder="xxxx xxxx xxxx xxxx" aria-label="xxxx xxxx xxxx xxxx" data-hs-mask-options='{
+                                      "template": "0000 0000 0000 0000"
+                                    }'>
+                            </div>
                             <!-- End Form Group -->
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <!-- Form Group -->
+                                    <div class="form-group">
+                                        <label for="expirationDateLabel" class="input-label">Expiration date</label>
+                                        <input type="text" class="js-masked-input form-control" name="expirationDate" id="expirationDateLabel" placeholder="xx/xxxx" aria-label="xx/xxxx" data-hs-mask-options='{
+                                          "template": "00/0000"
+                                        }'>
+                                    </div>
+                                    <!-- End Form Group -->
+                                </div>
+                                <div class="col-sm-6">
+                                    <!-- Form Group -->
+                                    <div class="form-group">
+                                        <label for="securityCodeLabel" class="input-label">CVV Code 
+                                            <i class="far fa-question-circle text-body ml-1" data-toggle="tooltip" data-placement="top" title="A 3 - digit number, typically printed on the back of a card."></i>
+                                        </label>
+                                        <input type="text" class="js-masked-input form-control" name="securityCode" id="securityCodeLabel" placeholder="xxx" aria-label="xxx" data-hs-mask-options='{
+                                          "template": "000"
+                                        }'>
+                                    </div>
+                                    <!-- End Form Group -->
+                                </div>
+                            </div>
                             <!-- End Row -->
                             <!-- Custom Checkbox -->
                             <!-- End Custom Checkbox -->
@@ -1106,11 +1148,39 @@
                                     <!-- End Radio Option 2 -->                                     
                                     <!-- Radio Option 3 -->                                     
                                     <!-- End Radio Option 3 -->                                     
-                                    <!-- Radio Option 4 -->                                     
+                                    <!-- Radio Option 4 -->                                                                                                               
                                     <!-- End Radio Option 4 -->                                     
                                     <hr class="g-brd-gray-light-v4 g-mx-minus-30"> 
-                                    <!-- Columned Radios -->                                                                                                               
-                                    <!-- End Columned Radios -->                                                                          
+                                    <!-- Columned Radios -->                                     
+                                    <h3 class="g-font-weight-700 g-mb-20 color-white">What are you interested in?</h3> 
+                                    <div class="btn-group justified-content"> 
+                                        <label class="u-check g-pl-0"> 
+                                            <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" checked="" name="Data_Consulting"> 
+                                            <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-primary--checked rounded-0">Data Consulting</span> 
+                                        </label>                                         
+                                        <label class="u-check g-pl-0"> 
+                                            <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" name="Image_Analysis"> 
+                                            <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-primary--checked g-brd-left-none--md rounded-0">Image Analysis</span> 
+                                        </label>                                         
+                                        <label class="u-check g-pl-0"> 
+                                            <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" name="Textual_data"> 
+                                            <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-primary--checked g-brd-left-none--md rounded-0">Textual data</span> 
+                                        </label>                                         
+                                        <label class="u-check g-pl-0"> 
+                                            <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" name="Optimization"> 
+                                            <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-primary--checked g-brd-left-none--md rounded-0">Optimization</span> 
+                                        </label>                                         
+                                        <label class="u-check g-pl-0"> 
+                                            <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" name='Time_data'> 
+                                            <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-primary--checked g-brd-left-none--md rounded-0">Time data</span> 
+                                        </label>                                         
+                                        <label class="u-check g-pl-0"> 
+                                            <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" name='Process_modeling'> 
+                                            <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-primary--checked g-brd-left-none--md rounded-0">Process modeling+</span> 
+                                        </label>                                         
+                                    </div>                                     
+                                    <!-- End Columned Radios -->                                     
+                                    <hr class="g-brd-gray-light-v4 g-mx-minus-30"> 
                                     <h3 class="g-font-weight-700 g-mb-20 color-black">Timeframe</h3> 
                                     <div class="btn-group justified-content"> 
                                         <label class="u-check g-pl-0"> 
@@ -1173,7 +1243,7 @@
                                             <div class="container g-pb-30"> 
                                                 <form class="row"> 
                                                     <div class="g-mb-50 col-sm-12"> 
-                                                        <label class="g-mb-10 color-black">Leave a date/time for a callback</label>                                                         
+                                                        <label class="g-mb-10 color-white">Leave a date/time for a callback</label>                                                         
                                                         <div class="btn-group justified-content"> 
                                                             <label class="u-check g-pl-0"> 
                                                                 <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" checked="" name="Morning"> 
@@ -1232,7 +1302,7 @@
                                                     <div class="g-mt-30 g-mb-30 col-sm-3"> 
 </div>                                                     
                                                     <div class="g-mt-30 g-mb-30 col-sm-3"> 
-                                                        <div class="d-flex"> 
+                                                        <div class="d-flex">                                                              
 </div>                                                         
                                                     </div>                                                     
                                                 </div>                                                 
